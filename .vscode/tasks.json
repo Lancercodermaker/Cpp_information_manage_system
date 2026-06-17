@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build supermarket_inventory (MSVC)",
+            "type": "shell",
+            "command": "${workspaceFolder}\\scripts\\build_msvc.cmd",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test inventory (MSVC)",
+            "type": "shell",
+            "command": "${workspaceFolder}\\scripts\\test_msvc.cmd",
+            "args": [],
+            "group": "test",
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
